@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PRIMARY COLORS */
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  /* NEUTRAL COLORS */
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  background-color: var(--lightGray);
+}
+
+body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Karla", sans-serif;
+  color: var(--grayishBlue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* FOR MOBILE SCREENS */
+.grid {
+  width: 85%;
+  margin: 4rem auto;
+  display: grid;
+  row-gap: 0;
+  grid-template-rows: auto auto auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.commContainer {
+  /* width: 85%;
+  margin: 0 auto; */
+  background-color: white;
+}
+
+.commHeader {
+  width: 85%;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 1rem auto 1.5rem auto;
+  color: var(--cyan);
+}
+
+.commSubHeader {
+  width: 85%;
+  font-weight: 700;
+  margin: 0 auto 1.5rem auto;
+  color: var(--brightYellow);
+}
+
+.commDescription {
+  width: 85%;
+  margin: 0 auto 2rem auto;
+  line-height: 1.5;
+}
+
+.priceContainer {
+  /* width: 85%;
+  margin: 0 auto; */
+  background-color: var(--cyan);
+}
+
+.priceHeader {
+  width: 85%;
+  margin: 1rem auto 1.5rem auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+/* .priceFlex {
+  width: 85%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price {
+  font-size: 25px;
+  margin-right: 0.5rem;
+} */
+
+.price {
+  width: 85%;
+  height: 2.5rem;
+  margin: 0 auto 1rem auto;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+/* .priceHighlight {
+  font-size: 25px;
+  margin-right: 0.5rem;
+} */
+
+.duration {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--lightGray);
+  margin-left: 0.5rem;
+  /* padding-bottom: 0.5rem; */
+}
+
+.priceDescription {
+  width: 85%;
+  margin: 0 auto 1.5rem auto;
+  color: white;
+}
+
+.signUp {
+  text-decoration: none;
+}
+
+.signUpText {
+  width: 85%;
+  margin: 0 auto 1.5rem auto;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  background-color: var(--brightYellow);
+  color: white;
+  border-radius: 5px;
+}
+
+.whyContainer {
+  /* width: 85%;
+  margin: 0 auto; */
+  background-color: rgb(72, 209, 204);
+}
+
+.whyHeader {
+  width: 85%;
+  margin: 1rem auto 1.5rem auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.whyList {
+  width: 85%;
+  margin: 0 auto 1.5rem auto;
+  color: white;
+}
+
+/* FOR DESKTOP SCREENS */
+@media only screen and (min-width: 1440px) {
+  .grid {
+    width: 50%;
+    margin: 7rem auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    column-gap: 0;
+  }
+
+  .commContainer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .commHeader {
+    margin: 2rem auto;
+  }
+
+  .commDescription {
+    margin-bottom: 3rem;
+  }
+
+  .priceContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .priceHeader {
+    margin-top: 2rem;
+  }
+
+  .signUpText {
+    margin-bottom: 2.5rem;
+  }
+
+  .whyContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .whyHeader {
+    margin-top: 2rem;
+  }
+
+  .whyList {
+    margin-bottom: 2.5rem;
+  }
+}
